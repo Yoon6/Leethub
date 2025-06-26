@@ -15,20 +15,8 @@ public:
             result << word2[i];
         }
 
-        if (word1.length() > minLength)
-        {
-            for (int i = minLength; i < word1.length(); i++)
-            {
-                result << word1[i];
-            }
-        }
-        else if (word2.length() > minLength)
-        {
-            for (int i = minLength; i < word2.length(); i++)
-            {
-                result << word2[i];
-            }
-        }
+        result << word1.substr(minLength);
+        result << word2.substr(minLength);
         return result.str();
     }
 };
