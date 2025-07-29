@@ -4,7 +4,8 @@ public:
         vector<int> answer;
 
         int sum = 1;
-        int zeroCount = 0;
+        bool zeroFlag = false;
+        bool multiZeroFlag = false;
         for (int& num : nums)
         {
             if (num != 0) 
@@ -13,7 +14,11 @@ public:
             }
             else
             {
-                zeroCount += 1;
+                if (zeroFlag)
+                {
+                    multiZeroFlag = true;
+                }
+                zeroFlag = true;
             }
         }
 
@@ -23,14 +28,14 @@ public:
             if (num != 0)
             {
                 tempSum /= num;
-                if (zeroCount > 0)
+                if (zeroFlag)
                 {
                     tempSum = 0;
                 }
             } 
             else 
             {
-                if (zeroCount > 1)
+                if (multiZeroFlag)
                 {
                     tempSum = 0;
                 }
