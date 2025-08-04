@@ -1,29 +1,34 @@
 class Solution {
 public:
     int maxOperations(vector<int>& nums, int k) {
-
         int count = 0;
-        unordered_map<int, int> numToCountMap;
-        for (auto& num : nums)
+        sort(nums.begin(), nums.end());
+
+        int first = 0;
+        int end = nums.size() - 1;
+
+        while(first < end)
         {
-            numToCountMap[num] += 1;
-        }
-        for (auto& num : nums)
-        {
-            if (numToCountMap[num] <= 0) 
+            int tempSum = nums[first] + nums[end];
+            if (tempSum == k)
             {
+                count++;
+                first++;
+                end--;
                 continue;
             }
-            numToCountMap[num] -= 1;
-            int target = k - num;
-            if (numToCountMap[target] <= 0) 
+
+            if (tempSum > k)
             {
-                numToCountMap[num] += 1;
-                continue;
+                end--;
             }
-            numToCountMap[target] -= 1;
-            count++;
+            else
+            {
+                first++;
+            }
         }
+
         return count;
+
     }
 };
