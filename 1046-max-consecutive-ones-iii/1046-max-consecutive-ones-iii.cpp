@@ -65,8 +65,6 @@ public:
             {
                 count++;
             }
-            cout << count << endl;
-
             maxCount = max(count, maxCount);
         }
         
