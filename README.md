@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/Yoon6/Leethub/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/Yoon6/Leethub/tree/master/0605-can-place-flowers) |
 | [0643-maximum-average-subarray-i](https://github.com/Yoon6/Leethub/tree/master/0643-maximum-average-subarray-i) |
+| [1046-max-consecutive-ones-iii](https://github.com/Yoon6/Leethub/tree/master/1046-max-consecutive-ones-iii) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/Yoon6/Leethub/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Greedy
 |  |
@@ -45,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/Yoon6/Leethub/tree/master/0238-product-of-array-except-self) |
+| [1046-max-consecutive-ones-iii](https://github.com/Yoon6/Leethub/tree/master/1046-max-consecutive-ones-iii) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -61,4 +63,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/Yoon6/Leethub/tree/master/0643-maximum-average-subarray-i) |
+| [1046-max-consecutive-ones-iii](https://github.com/Yoon6/Leethub/tree/master/1046-max-consecutive-ones-iii) |
+## Binary Search
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/Yoon6/Leethub/tree/master/1046-max-consecutive-ones-iii) |
 <!---LeetCode Topics End-->
